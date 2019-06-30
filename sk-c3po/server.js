@@ -31,6 +31,8 @@ client.on('message', message => {
     if (!message.content.startsWith(praefix)) { return; }
     if (message.channel.id === 572687358416388096) { return; }
 
+    console.log("message.channel", message.channel);
+
     try {
         var messageWithoutPraefix = message.content.slice(praefix.length);
 
