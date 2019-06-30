@@ -67,6 +67,10 @@ client.on('message', message => {
                 message.react(thinkingFace);
                 spunkte(message);
                 break;
+            case "weekly":
+            message.react(thinkingFace);
+            weeklytitle(client);
+            break;
             case "channelid":
                 message.react(thinkingFace);
                 message.reply(message.channel.id);
